@@ -1,0 +1,3199 @@
+{
+	"info": {
+		"_postman_id": "e6620f7e-397a-4453-bd28-7c1a0100476b",
+		"name": "Fiverr Backend API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38391172"
+	},
+	"item": [
+		{
+			"name": "Contracts",
+			"item": [
+				{
+					"name": "Get Contract by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/contracts/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contracts",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						},
+						"description": "### GET /contracts/:id\n\nThis endpoint retrieves the details of a specific contract identified by the provided ID.\n\n#### Response\n\nThe response body follows the JSON schema below:\n\n``` json\n{\n    \"type\": \"object\",\n    \"properties\": {\n        \"success\": {\n            \"type\": \"boolean\"\n        },\n        \"message\": {\n            \"type\": \"string\"\n        },\n        \"statusCode\": {\n            \"type\": \"integer\"\n        },\n        \"data\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"id\": {\n                    \"type\": \"integer\"\n                },\n                \"terms\": {\n                    \"type\": \"string\"\n                },\n                \"status\": {\n                    \"type\": \"string\"\n                },\n                \"createdAt\": {\n                    \"type\": \"string\"\n                },\n                \"updatedAt\": {\n                    \"type\": \"string\"\n                },\n                \"ContractorId\": {\n                    \"type\": \"integer\"\n                },\n                \"ClientId\": {\n                    \"type\": \"integer\"\n                }\n            }\n        }\n    }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/contracts/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contracts",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "214"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d6-Ak4TXm6jZfmWz6Tc+f+IdRMWD9o\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 08:08:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"id\": 1,\n        \"terms\": \"bla bla bla\",\n        \"status\": \"terminated\",\n        \"createdAt\": \"2024-09-17T06:08:24.468Z\",\n        \"updatedAt\": \"2024-09-17T06:08:24.468Z\",\n        \"ContractorId\": 5,\n        \"ClientId\": 1\n    }\n}"
+						},
+						{
+							"name": "Not Found 404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/contracts/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contracts",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "901"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 08:09:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Bad Request 400",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/contracts/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contracts",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "abcd"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23-NNV/6g6HXpfmwDaD7hrAjaMH+is\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 08:10:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"\\\"id\\\" must be a number\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Non-Terminated Contracts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/contracts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contracts"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "123",
+									"disabled": true
+								}
+							]
+						},
+						"description": "### GET /contracts\n\nThis endpoint retrieves a list of contracts.\n\n#### Request\n\nNo request body is required for this endpoint.\n\n#### Response\n\nThe response will be a JSON object with the following schema:\n\n- `success` (boolean): Indicates if the request was successful.\n    \n- `message` (string): A message related to the request.\n    \n- `statusCode` (integer): The status code of the response.\n    \n- `data` (array): An array of contract objects, where each object has the following properties:\n    \n    - `id` (integer): The unique identifier of the contract.\n        \n    - `terms` (string): The terms of the contract.\n        \n    - `status` (string): The status of the contract.\n        \n    - `createdAt` (string): The creation date of the contract.\n        \n    - `updatedAt` (string): The last update date of the contract.\n        \n    - `ContractorId` (integer): The unique identifier of the contractor associated with the contract.\n        \n    - `ClientId` (integer): The unique identifier of the client associated with the contract.\n        \n\n#### Example\n\n``` json\n{\n    \"success\": true,\n    \"message\": \"\",\n    \"statusCode\": 0,\n    \"data\": [\n        {\n            \"id\": 0,\n            \"terms\": \"\",\n            \"status\": \"\",\n            \"createdAt\": \"\",\n            \"updatedAt\": \"\",\n            \"ContractorId\": 0,\n            \"ClientId\": 0\n        }\n    ]\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/contracts",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contracts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "217"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d9-O/K82N7dbldkUYcONWhCYIlpkPE\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 08:11:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"statusCode\": 200,\n    \"data\": [\n        {\n            \"id\": 2,\n            \"terms\": \"bla bla bla\",\n            \"status\": \"in_progress\",\n            \"createdAt\": \"2024-09-17T06:08:24.468Z\",\n            \"updatedAt\": \"2024-09-17T06:08:24.468Z\",\n            \"ContractorId\": 6,\n            \"ClientId\": 1\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Contract",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"terms\": \"New contract terms\",\n    \"status\": \"new\",\n    \"ClientId\": 1,\n    \"ContractorId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/contracts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contracts"
+							]
+						},
+						"description": "### Create Contract\n\nThis endpoint allows the creation of a new contract.\n\n#### Request Body\n\n- `terms` (string, optional): The terms of the contract.\n    \n- `status` (string, optional): The status of the contract.\n    \n- `ClientId` (integer, optional): The ID of the client associated with the contract.\n    \n- `ContractorId` (integer, optional): The ID of the contractor associated with the contract.\n    \n\n#### Response\n\nThe response is a JSON object with the following schema:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"success\": {\n      \"type\": \"boolean\"\n    },\n    \"message\": {\n      \"type\": \"string\"\n    },\n    \"statusCode\": {\n      \"type\": \"integer\"\n    },\n    \"data\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"id\": {\n          \"type\": \"integer\"\n        },\n        \"terms\": {\n          \"type\": \"string\"\n        },\n        \"status\": {\n          \"type\": \"string\"\n        },\n        \"ClientId\": {\n          \"type\": \"integer\"\n        },\n        \"ContractorId\": {\n          \"type\": \"integer\"\n        },\n        \"updatedAt\": {\n          \"type\": \"string\"\n        },\n        \"createdAt\": {\n          \"type\": \"string\"\n        }\n      }\n    }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"terms\": \"New contract terms\",\n    \"status\": \"new\",\n    \"ClientId\": 1,\n    \"ContractorId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/contracts",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contracts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "242"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f2-PPlH57QhBCrlLHlB9KbyGb7VOjk\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 08:14:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Entity created successfully\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"id\": 10,\n        \"terms\": \"New contract terms\",\n        \"status\": \"new\",\n        \"ClientId\": 1,\n        \"ContractorId\": 2,\n        \"updatedAt\": \"2024-09-17T08:14:53.425Z\",\n        \"createdAt\": \"2024-09-17T08:14:53.425Z\"\n    }\n}"
+						},
+						{
+							"name": "Bad Request 400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"terms\": \"New contract terms\",\n    \"status\": \"new\",\n    \"ClientId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/contracts",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contracts"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-KMVzHOAjIYLWhJOSmziFMN1nSUg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 08:15:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"\\\"ContractorId\\\" is required\"\n}"
+						},
+						{
+							"name": "Not Found 404",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"terms\": \"New contract terms\",\n    \"status\": \"new\",\n    \"ClientId\": 1,\n    \"ContractorId\": 1029\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/contracts",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contracts"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "78"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4e-DnYdBLbnrt53A1E12rSD8wpTMeo\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 08:47:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"statusCode\": 404,\n    \"message\": \"\",\n    \"error\": \"Contractor not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Contract",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"terms\": \"Updated contract terms\",\n    \"status\": \"in_progress\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/contracts/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contracts",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						},
+						"description": "### Update Contract Details\n\nThis endpoint allows the client to update the details of a specific contract.\n\n#### Request\n\n- Method: PUT\n    \n- Endpoint: `{{base_url}}/contracts/:id`\n    \n- Headers:\n    \n    - Content-Type: application/json\n        \n- Body:\n    \n    - `terms` (string, optional): The updated terms of the contract.\n        \n    - `status` (string, optional): The updated status of the contract.\n        \n\n#### Response\n\n- Status: 400\n    \n- Content-Type: application/json\n    \n- { \"error\": \"\"}\n    \n\n#### Example Response\n\n``` json\n{\n  \"success\": true,\n  \"message\": \"\",\n  \"statusCode\": 0,\n  \"data\": {}\n}\n\n ```\n\n#### JSON Schema for Response\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"success\": {\n      \"type\": \"boolean\"\n    },\n    \"message\": {\n      \"type\": \"string\"\n    },\n    \"statusCode\": {\n      \"type\": \"integer\"\n    },\n    \"data\": {\n      \"type\": \"object\"\n    }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"terms\": \"Updated contract terms\",\n    \"status\": \"terminated\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/contracts/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contracts",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-Xv8v3HByGGF92rUJZzkvfwnezJw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 09:18:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"statusCode\": 200,\n    \"data\": {}\n}"
+						},
+						{
+							"name": "Not Found 404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"terms\": \"Updated contract terms\",\n    \"status\": \"terminated\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/contracts/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contracts",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1201"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4c-MB8VlMFMoNWoAe7cYicIZ5EknyI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 09:19:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"statusCode\": 404,\n    \"message\": \"\",\n    \"error\": \"Contract not found\"\n}"
+						},
+						{
+							"name": "Bad Request 400",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"terms\": \"Updated contract terms\",\n    \"status\": \"complet\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/contracts/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contracts",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1201"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "68"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"44-CD9lavpu7B1f7ZqIqPwyFQ0rBtk\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 09:20:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"\\\"status\\\" must be one of [new, in_progress, terminated]\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Contract",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/contracts/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contracts",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						},
+						"description": "The API endpoint sends an HTTP DELETE request to delete a specific contract identified by its ID.\n\n### Response\n\nThe response for this request is a 204 status code with a Content-Type of text/xml. Since the response body is null, the JSON schema for the response would be:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {},\n  \"additionalProperties\": false\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "Not Found 404",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/contracts/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contracts",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1120"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4c-MB8VlMFMoNWoAe7cYicIZ5EknyI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 09:20:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"statusCode\": 404,\n    \"message\": \"\",\n    \"error\": \"Contract not found\"\n}"
+						},
+						{
+							"name": "Success 204",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/contracts/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"contracts",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-ydqtJebMoHmSJIh+CvTwu6obrw8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 09:21:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "Get All Unpaid Jobs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/jobs/unpaid",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"jobs",
+								"unpaid"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/jobs/unpaid",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jobs",
+										"unpaid"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "221"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"dd-dDIPv8iiKiHUd27rBHWOSbGc30o\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 09:27:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"statusCode\": 200,\n    \"data\": [\n        {\n            \"id\": 2,\n            \"description\": \"work\",\n            \"price\": 201,\n            \"paid\": null,\n            \"paymentDate\": null,\n            \"createdAt\": \"2024-09-17T06:08:24.469Z\",\n            \"updatedAt\": \"2024-09-17T06:08:24.469Z\",\n            \"ContractId\": 2\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Pay for a Job",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/jobs/:job_id/pay",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"jobs",
+								":job_id",
+								"pay"
+							],
+							"variable": [
+								{
+									"key": "job_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Not Found 404",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/jobs/:job_id/pay",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jobs",
+										":job_id",
+										"pay"
+									],
+									"variable": [
+										{
+											"key": "job_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "87"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"57-mF82mMSXIkB3j+Qh3u0HVfvj/Xo\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 09:47:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"statusCode\": 404,\n    \"message\": \"\",\n    \"error\": \"Job not found or already paid\"\n}"
+						},
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/jobs/:job_id/pay",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jobs",
+										":job_id",
+										"pay"
+									],
+									"variable": [
+										{
+											"key": "job_id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "635"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"27b-YRrUBYl4M0tXUoKwkiHsrf57Yj8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 09:51:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Payment successful\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"id\": 2,\n        \"description\": \"work\",\n        \"price\": 201,\n        \"paid\": true,\n        \"paymentDate\": \"2024-09-17T09:51:00.994Z\",\n        \"createdAt\": \"2024-09-17T06:08:24.469Z\",\n        \"updatedAt\": \"2024-09-17T09:51:00.995Z\",\n        \"ContractId\": 2,\n        \"Contract\": {\n            \"id\": 2,\n            \"terms\": \"bla bla bla\",\n            \"status\": \"in_progress\",\n            \"createdAt\": \"2024-09-17T06:08:24.468Z\",\n            \"updatedAt\": \"2024-09-17T06:08:24.468Z\",\n            \"ContractorId\": 6,\n            \"ClientId\": 1,\n            \"Contractor\": {\n                \"id\": 6,\n                \"firstName\": \"Linus\",\n                \"lastName\": \"Torvalds\",\n                \"profession\": \"Programmer\",\n                \"balance\": 1214,\n                \"type\": \"contractor\",\n                \"createdAt\": \"2024-09-17T06:08:24.468Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.468Z\"\n            }\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Jobs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/jobs",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"jobs"
+							]
+						},
+						"description": "### GET /jobs\n\nThis endpoint retrieves a list of jobs.\n\n#### Request\n\nThis request does not require any request body.\n\n#### Response\n\nThe response will be a JSON object with the following schema:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"success\": {\n      \"type\": \"boolean\"\n    },\n    \"message\": {\n      \"type\": \"string\"\n    },\n    \"statusCode\": {\n      \"type\": \"number\"\n    },\n    \"data\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"rows\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"id\": {\n                \"type\": \"number\"\n              },\n              \"description\": {\n                \"type\": \"string\"\n              },\n              \"price\": {\n                \"type\": \"number\"\n              },\n              \"paid\": {\n                \"type\": [\"null\", \"string\"]\n              },\n              \"paymentDate\": {\n                \"type\": [\"null\", \"string\"]\n              },\n              \"createdAt\": {\n                \"type\": \"string\"\n              },\n              \"updatedAt\": {\n                \"type\": \"string\"\n              },\n              \"ContractId\": {\n                \"type\": \"number\"\n              }\n            }\n          }\n        },\n        \"count\": {\n          \"type\": \"number\"\n        },\n        \"countPerPage\": {\n          \"type\": \"number\"\n        },\n        \"currentPage\": {\n          \"type\": \"number\"\n        },\n        \"totalPages\": {\n          \"type\": \"number\"\n        },\n        \"hasNext\": {\n          \"type\": \"boolean\"\n        }\n      }\n    }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/jobs",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jobs"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2007"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7d7-CtWZFle83wG9g5CMLYCR/WZED8s\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 09:59:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"rows\": [\n            {\n                \"id\": 5,\n                \"description\": \"work\",\n                \"price\": 200,\n                \"paid\": null,\n                \"paymentDate\": null,\n                \"createdAt\": \"2024-09-17T06:08:24.470Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.470Z\",\n                \"ContractId\": 7\n            },\n            {\n                \"id\": 6,\n                \"description\": \"work\",\n                \"price\": 2020,\n                \"paid\": true,\n                \"paymentDate\": \"2020-08-15T19:11:26.737Z\",\n                \"createdAt\": \"2024-09-17T06:08:24.470Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.470Z\",\n                \"ContractId\": 7\n            },\n            {\n                \"id\": 7,\n                \"description\": \"work\",\n                \"price\": 200,\n                \"paid\": true,\n                \"paymentDate\": \"2020-08-15T19:11:26.737Z\",\n                \"createdAt\": \"2024-09-17T06:08:24.470Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.470Z\",\n                \"ContractId\": 2\n            },\n            {\n                \"id\": 8,\n                \"description\": \"work\",\n                \"price\": 200,\n                \"paid\": true,\n                \"paymentDate\": \"2020-08-16T19:11:26.737Z\",\n                \"createdAt\": \"2024-09-17T06:08:24.470Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.470Z\",\n                \"ContractId\": 3\n            },\n            {\n                \"id\": 9,\n                \"description\": \"work\",\n                \"price\": 200,\n                \"paid\": true,\n                \"paymentDate\": \"2020-08-17T19:11:26.737Z\",\n                \"createdAt\": \"2024-09-17T06:08:24.470Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.470Z\",\n                \"ContractId\": null\n            },\n            {\n                \"id\": 10,\n                \"description\": \"work\",\n                \"price\": 200,\n                \"paid\": true,\n                \"paymentDate\": \"2020-08-17T19:11:26.737Z\",\n                \"createdAt\": \"2024-09-17T06:08:24.470Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.470Z\",\n                \"ContractId\": 5\n            },\n            {\n                \"id\": 11,\n                \"description\": \"work\",\n                \"price\": 21,\n                \"paid\": true,\n                \"paymentDate\": \"2020-08-10T19:11:26.737Z\",\n                \"createdAt\": \"2024-09-17T06:08:24.470Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.470Z\",\n                \"ContractId\": null\n            },\n            {\n                \"id\": 12,\n                \"description\": \"work\",\n                \"price\": 21,\n                \"paid\": true,\n                \"paymentDate\": \"2020-08-15T19:11:26.737Z\",\n                \"createdAt\": \"2024-09-17T06:08:24.470Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.470Z\",\n                \"ContractId\": 2\n            },\n            {\n                \"id\": 13,\n                \"description\": \"work\",\n                \"price\": 121,\n                \"paid\": true,\n                \"paymentDate\": \"2020-08-15T19:11:26.737Z\",\n                \"createdAt\": \"2024-09-17T06:08:24.470Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.470Z\",\n                \"ContractId\": 3\n            },\n            {\n                \"id\": 14,\n                \"description\": \"work\",\n                \"price\": 121,\n                \"paid\": true,\n                \"paymentDate\": \"2020-08-14T23:11:26.737Z\",\n                \"createdAt\": \"2024-09-17T06:08:24.470Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.470Z\",\n                \"ContractId\": 3\n            }\n        ],\n        \"count\": 14,\n        \"countPerPage\": 10,\n        \"currentPage\": 1,\n        \"totalPages\": 2,\n        \"hasNext\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Job by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/jobs/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"jobs",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "15"
+								}
+							]
+						},
+						"description": "This endpoint retrieves details of a specific job by providing the job ID in the URL parameter. The request does not contain a request body. The response will include a JSON object with the keys \"success\", \"message\", \"statusCode\", and \"data\". The \"data\" object will contain information about the job, including its ID, description, price, payment status, payment date, creation date, update date, and associated Contract ID."
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/jobs/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jobs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "241"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f1-KkH17G28ADVavTxtMkJv1Lf5bNA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 09:59:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"id\": 2,\n        \"description\": \"work\",\n        \"price\": 201,\n        \"paid\": true,\n        \"paymentDate\": \"2024-09-17T09:51:00.994Z\",\n        \"createdAt\": \"2024-09-17T06:08:24.469Z\",\n        \"updatedAt\": \"2024-09-17T09:51:00.995Z\",\n        \"ContractId\": 2\n    }\n}"
+						},
+						{
+							"name": "Not Found 404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/jobs/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jobs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "22010"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "71"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"47-hqB7xjtH4vPN9E0hevyNVJUVdJA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:00:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"statusCode\": 404,\n    \"message\": \"\",\n    \"error\": \"Job not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Job",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"New job description\",\n    \"price\": 100.00,\n    \"ContractId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/jobs",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"jobs"
+							]
+						},
+						"description": "### POST /jobs\n\nThis endpoint is used to create a new job.\n\n#### Request\n\n- Method: POST\n    \n- Base URL: {{base_url}}\n    \n- Body:\n    \n    - description (string, optional): A brief description of the job.\n        \n    - price (number, optional): The price of the job.\n        \n    - ContractId (number, optional): The ID of the contract associated with the job.\n        \n\n#### Response\n\nThe response for this request can be described using the following JSON schema:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"success\": {\n      \"type\": \"boolean\"\n    },\n    \"message\": {\n      \"type\": \"string\"\n    },\n    \"statusCode\": {\n      \"type\": \"number\"\n    },\n    \"data\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"paid\": {\n          \"type\": \"boolean\"\n        },\n        \"id\": {\n          \"type\": \"number\"\n        },\n        \"description\": {\n          \"type\": \"string\"\n        },\n        \"price\": {\n          \"type\": \"number\"\n        },\n        \"ContractId\": {\n          \"type\": \"number\"\n        },\n        \"updatedAt\": {\n          \"type\": \"string\"\n        },\n        \"createdAt\": {\n          \"type\": \"string\"\n        }\n      }\n    }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\": \"New job description\",\n    \"price\": 100.00,\n    \"ContractId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/jobs",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jobs"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "244"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f4-byq1a3BjVSyl3Q3mdoqjCfPMaww\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:02:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Entity created successfully\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"paid\": false,\n        \"id\": 15,\n        \"description\": \"New job description\",\n        \"price\": 100,\n        \"ContractId\": 2,\n        \"updatedAt\": \"2024-09-17T10:02:56.051Z\",\n        \"createdAt\": \"2024-09-17T10:02:56.051Z\"\n    }\n}"
+						},
+						{
+							"name": "Not Found 404",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\": \"New job description\",\n    \"price\": 100.00,\n    \"ContractId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/jobs",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jobs"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4c-MB8VlMFMoNWoAe7cYicIZ5EknyI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:05:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"statusCode\": 404,\n    \"message\": \"\",\n    \"error\": \"Contract not found\"\n}"
+						},
+						{
+							"name": "Bad Request 400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\": \"New job description\",\n    \"price\": 100.00\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/jobs",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jobs"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"26-suF+mBQr1jYB4Tpccl5hrYFaF0E\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:05:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"\\\"ContractId\\\" is required\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Job",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"Updated job description\",\n    \"price\": 150000.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/jobs/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"jobs",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "15"
+								}
+							]
+						},
+						"description": "### Update Job Details\n\nThis endpoint allows the user to update the details of a specific job.\n\n#### Request Body\n\n- `description` (string, optional): A brief description of the job.\n    \n- `price` (number, required): The price of the job.\n    \n\n#### Response\n\nThe response is in JSON format and follows the schema below:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"success\": {\n      \"type\": \"boolean\"\n    },\n    \"message\": {\n      \"type\": \"string\"\n    },\n    \"statusCode\": {\n      \"type\": \"number\"\n    },\n    \"data\": {\n      \"type\": \"object\"\n    }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\": \"Updated job description\",\n    \"price\": 150000.00\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/jobs/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jobs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "15"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-Xv8v3HByGGF92rUJZzkvfwnezJw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:06:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"statusCode\": 200,\n    \"data\": {}\n}"
+						},
+						{
+							"name": "Not Found 404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\": \"Updated job description\",\n    \"price\": 150000.00\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/jobs/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jobs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1512"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "71"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"47-hqB7xjtH4vPN9E0hevyNVJUVdJA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:07:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"statusCode\": 404,\n    \"message\": \"\",\n    \"error\": \"Job not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Job",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/jobs/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"jobs",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						},
+						"description": "### Delete Job by ID\n\nThis endpoint is used to delete a specific job by providing its ID in the URL.\n\n#### Response\n\nThe response of this request is a JSON schema representing the structure of the response data when a job is deleted."
+					},
+					"response": [
+						{
+							"name": "Success 204",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/jobs/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jobs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-ydqtJebMoHmSJIh+CvTwu6obrw8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:07:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Not Found 404",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/jobs/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"jobs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "71"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"47-hqB7xjtH4vPN9E0hevyNVJUVdJA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:08:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"statusCode\": 404,\n    \"message\": \"\",\n    \"error\": \"Job not found\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Profiles",
+			"item": [
+				{
+					"name": "Deposit Money",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": 100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/profiles/balances/deposit/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"profiles",
+								"balances",
+								"deposit",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						},
+						"description": "### POST /profiles/balances/deposit/:id\n\nThis endpoint allows the user to deposit a specified amount to the balance associated with a specific profile.\n\n#### Request Body\n\n- `amount` (number, required): The amount to be deposited to the balance.\n    \n\n#### Response\n\nThe response will be a JSON object with the following properties:\n\n``` json\n{\n  \"success\": boolean,\n  \"message\": string,\n  \"statusCode\": number,\n  \"data\": {\n    \"id\": number,\n    \"firstName\": string,\n    \"lastName\": string,\n    \"profession\": string,\n    \"balance\": number,\n    \"type\": string,\n    \"createdAt\": string,\n    \"updatedAt\": string\n  }\n}\n\n ```\n\n- `success` (boolean): Indicates if the request was successful.\n    \n- `message` (string): Additional information or error message.\n    \n- `statusCode` (number): The status code of the response.\n    \n- `data` (object): Contains the profile information and updated balance details.\n    \n    - `id` (number): Profile ID.\n        \n    - `firstName` (string): First name of the profile owner.\n        \n    - `lastName` (string): Last name of the profile owner.\n        \n    - `profession` (string): Profession of the profile owner.\n        \n    - `balance` (number): Updated balance after deposit.\n        \n    - `type` (string): Type of the profile.\n        \n    - `createdAt` (string): Creation date of the profile.\n        \n    - `updatedAt` (string): Last update date of the profile."
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"amount\": 100\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/profiles/balances/deposit/:userId",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"profiles",
+										"balances",
+										"deposit",
+										":userId"
+									],
+									"variable": [
+										{
+											"key": "userId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "251"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fb-iVHCun4ywupIqUCA8IpBE2E0upU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:30:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Deposit successful\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"id\": 1,\n        \"firstName\": \"Harry\",\n        \"lastName\": \"Potter\",\n        \"profession\": \"Wizard\",\n        \"balance\": 1049,\n        \"type\": \"client\",\n        \"createdAt\": \"2024-09-17T06:08:24.466Z\",\n        \"updatedAt\": \"2024-09-17T10:21:26.740Z\"\n    }\n}"
+						},
+						{
+							"name": "Not Found 404",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"amount\": 100\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/profiles/balances/deposit/:userId",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"profiles",
+										"balances",
+										"deposit",
+										":userId"
+									],
+									"variable": [
+										{
+											"key": "userId",
+											"value": "112"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4b-7+wAacxiSUAmg4eBRUZ3ixXnY1I\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:31:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"statusCode\": 404,\n    \"message\": \"\",\n    \"error\": \"Profile not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Profiles",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/profiles",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"profiles"
+							]
+						},
+						"description": "# Get Profiles\n\nThis endpoint retrieves a list of profiles.\n\n## Request\n\n### Query Parameters\n\n- No query parameters required.\n    \n\n### Headers\n\n- No headers required.\n    \n\n## Response\n\n- `success` (boolean): Indicates if the request was successful.\n    \n- `message` (string): A message related to the response.\n    \n- `statusCode` (integer): The status code of the response.\n    \n- `data` (object): Contains the profile information.\n    \n    - `rows` (array): An array of profile objects.\n        \n        - `id` (integer): The unique identifier of the profile.\n            \n        - `firstName` (string): The first name of the profile owner.\n            \n        - `lastName` (string): The last name of the profile owner.\n            \n        - `profession` (string): The profession of the profile owner.\n            \n        - `balance` (integer): The balance associated with the profile.\n            \n        - `type` (string): The type of the profile.\n            \n        - `createdAt` (string): The date and time when the profile was created.\n            \n        - `updatedAt` (string): The date and time when the profile was last updated.\n            \n    - `count` (integer): The total count of profiles.\n        \n    - `countPerPage` (integer): The count of profiles per page.\n        \n    - `currentPage` (integer): The current page number.\n        \n    - `totalPages` (integer): The total number of pages.\n        \n    - `hasNext` (boolean): Indicates if there are more pages available.\n        \n\n**Note:** The response may contain additional fields not listed here."
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/profiles",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"profiles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1630"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"65e-bLwnaBrl8YcBnZDa+t3L4zMfo08\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:31:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"rows\": [\n            {\n                \"id\": 4,\n                \"firstName\": \"Ash\",\n                \"lastName\": \"Kethcum\",\n                \"profession\": \"Pokemon master\",\n                \"balance\": 1.3,\n                \"type\": \"client\",\n                \"createdAt\": \"2024-09-17T06:08:24.468Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.468Z\"\n            },\n            {\n                \"id\": 5,\n                \"firstName\": \"John\",\n                \"lastName\": \"Lenon\",\n                \"profession\": \"Musician\",\n                \"balance\": 64,\n                \"type\": \"contractor\",\n                \"createdAt\": \"2024-09-17T06:08:24.468Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.468Z\"\n            },\n            {\n                \"id\": 6,\n                \"firstName\": \"Linus\",\n                \"lastName\": \"Torvalds\",\n                \"profession\": \"Programmer\",\n                \"balance\": 1415,\n                \"type\": \"contractor\",\n                \"createdAt\": \"2024-09-17T06:08:24.468Z\",\n                \"updatedAt\": \"2024-09-17T09:51:00.992Z\"\n            },\n            {\n                \"id\": 7,\n                \"firstName\": \"Alan\",\n                \"lastName\": \"Turing\",\n                \"profession\": \"Programmer\",\n                \"balance\": 22,\n                \"type\": \"contractor\",\n                \"createdAt\": \"2024-09-17T06:08:24.468Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.468Z\"\n            },\n            {\n                \"id\": 8,\n                \"firstName\": \"Aragorn\",\n                \"lastName\": \"II Elessar Telcontarvalds\",\n                \"profession\": \"Fighter\",\n                \"balance\": 314,\n                \"type\": \"contractor\",\n                \"createdAt\": \"2024-09-17T06:08:24.468Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.468Z\"\n            },\n            {\n                \"id\": 2,\n                \"firstName\": \"Mr\",\n                \"lastName\": \"Robot\",\n                \"profession\": \"Hacker\",\n                \"balance\": 231.11,\n                \"type\": \"client\",\n                \"createdAt\": \"2024-09-17T06:08:24.467Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.467Z\"\n            },\n            {\n                \"id\": 3,\n                \"firstName\": \"John\",\n                \"lastName\": \"Snow\",\n                \"profession\": \"Knows nothing\",\n                \"balance\": 451.3,\n                \"type\": \"client\",\n                \"createdAt\": \"2024-09-17T06:08:24.467Z\",\n                \"updatedAt\": \"2024-09-17T06:08:24.467Z\"\n            },\n            {\n                \"id\": 1,\n                \"firstName\": \"Harry\",\n                \"lastName\": \"Potter\",\n                \"profession\": \"Wizard\",\n                \"balance\": 1349,\n                \"type\": \"client\",\n                \"createdAt\": \"2024-09-17T06:08:24.466Z\",\n                \"updatedAt\": \"2024-09-17T10:31:05.009Z\"\n            }\n        ],\n        \"count\": 8,\n        \"countPerPage\": 10,\n        \"currentPage\": 1,\n        \"totalPages\": 1,\n        \"hasNext\": false\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Profile by User ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/profiles/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"profiles",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						},
+						"description": "This endpoint retrieves the profile information for a specific user identified by their ID.\n\n### Response\n\nThe response will be a JSON object with the following properties:\n\n- `success` (boolean): Indicates if the request was successful.\n    \n- `message` (string): A message related to the response.\n    \n- `statusCode` (number): A status code related to the response.\n    \n- `data` (object): An object containing the profile information with the following properties:\n    \n    - `id` (number): The unique identifier of the user.\n        \n    - `firstName` (string): The first name of the user.\n        \n    - `lastName` (string): The last name of the user.\n        \n    - `profession` (string): The profession of the user.\n        \n    - `balance` (number): The balance associated with the user's account.\n        \n    - `type` (string): The type of the user's account.\n        \n    - `createdAt` (string): The date and time when the profile was created.\n        \n    - `updatedAt` (string): The date and time when the profile was last updated.\n        \n\nThe response of this request can be documented as a JSON schema."
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/profiles/:userId",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"profiles",
+										":userId"
+									],
+									"variable": [
+										{
+											"key": "userId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "233"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e9-Qz5ALE8yK5HRpDDEPS/4j2xRDyI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:33:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"id\": 1,\n        \"firstName\": \"Harry\",\n        \"lastName\": \"Potter\",\n        \"profession\": \"Wizard\",\n        \"balance\": 1349,\n        \"type\": \"client\",\n        \"createdAt\": \"2024-09-17T06:08:24.466Z\",\n        \"updatedAt\": \"2024-09-17T10:31:05.009Z\"\n    }\n}"
+						},
+						{
+							"name": "Not Found 404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/profiles/:userId",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"profiles",
+										":userId"
+									],
+									"variable": [
+										{
+											"key": "userId",
+											"value": "1123"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4b-7+wAacxiSUAmg4eBRUZ3ixXnY1I\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:34:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"statusCode\": 404,\n    \"message\": \"\",\n    \"error\": \"Profile not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Dushyant\",\n    \"lastName\": \"Pratap\",\n    \"profession\": \"Developer\",\n    \"balance\": 1001,\n    \"type\": \"contractor\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/profiles",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"profiles"
+							]
+						},
+						"description": "This endpoint allows you to create a new profile by sending a POST request to the specified URL. The request should include the following parameters in the request body: firstName, lastName, profession, balance, and type.\n\n### Request Body\n\n- `firstName` (string): The first name of the profile.\n    \n- `lastName` (string): The last name of the profile.\n    \n- `profession` (string): The profession of the profile.\n    \n- `balance` (number): The balance of the profile.\n    \n- `type` (string): The type of the profile.\n    \n\n### Response\n\nThe response will be a JSON object with the following properties:\n\n- `success` (boolean): Indicates if the request was successful.\n    \n- `message` (string): A message related to the request.\n    \n- `statusCode` (number): The status code of the response.\n    \n- `data` (object): An object containing the profile information.\n    \n    - `id` (number): The ID of the profile.\n        \n    - `firstName` (string): The first name of the profile.\n        \n    - `lastName` (string): The last name of the profile.\n        \n    - `profession` (string): The profession of the profile.\n        \n    - `balance` (number): The balance of the profile.\n        \n    - `type` (string): The type of the profile.\n        \n    - `updatedAt` (string): The date and time when the profile was last updated.\n        \n    - `createdAt` (string): The date and time when the profile was created.\n        \n\n### JSON Schema for Response\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"success\": { \"type\": \"boolean\" },\n    \"message\": { \"type\": \"string\" },\n    \"statusCode\": { \"type\": \"number\" },\n    \"data\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"id\": { \"type\": \"number\" },\n        \"firstName\": { \"type\": \"string\" },\n        \"lastName\": { \"type\": \"string\" },\n        \"profession\": { \"type\": \"string\" },\n        \"balance\": { \"type\": \"number\" },\n        \"type\": { \"type\": \"string\" },\n        \"updatedAt\": { \"type\": \"string\" },\n        \"createdAt\": { \"type\": \"string\" }\n      }\n    }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Dushyant\",\n    \"lastName\": \"Pratap\",\n    \"profession\": \"Developer\",\n    \"balance\": 1001,\n    \"type\": \"contractor\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/profiles",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"profiles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "270"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10e-9MCR0TuOKZIRMl02EO3wM7xznRA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:34:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Entity created successfully\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"id\": 9,\n        \"firstName\": \"Dushyant\",\n        \"lastName\": \"Pratap\",\n        \"profession\": \"Developer\",\n        \"balance\": 1001,\n        \"type\": \"contractor\",\n        \"updatedAt\": \"2024-09-17T10:34:50.368Z\",\n        \"createdAt\": \"2024-09-17T10:34:50.368Z\"\n    }\n}"
+						},
+						{
+							"name": "Bad Request 400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Dushyant\",\n    \"lastName\": \"Pratap\",\n    \"profession\": \"Developer\",\n    \"balance\": 1001,\n    \"type\": \"x\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/profiles",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"profiles"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-fkNbcUe0HNGpSOPAzRfnPIx43EQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:35:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"\\\"type\\\" must be one of [client, contractor]\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lastName\": \"Pratap Singh\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/profiles/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"profiles",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						},
+						"description": "### Update Profile\n\nThis endpoint is used to update the profile information for a specific user.\n\n#### Request\n\n- Method: PUT\n    \n- URL: `{{base_url}}/profiles/:id`\n    \n- Body:\n    \n    - `lastName` (string, required): The last name of the user.\n        \n\n#### Response\n\nThe response for this request is a JSON object with the following properties:\n\n- `success` (boolean): Indicates if the request was successful.\n    \n- `message` (string): A message related to the request.\n    \n- `statusCode` (integer): The status code of the response.\n    \n- `data` (object): An empty object in this case.\n    \n\n#### JSON Schema\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"success\": {\n      \"type\": \"boolean\"\n    },\n    \"message\": {\n      \"type\": \"string\"\n    },\n    \"statusCode\": {\n      \"type\": \"integer\"\n    },\n    \"data\": {\n      \"type\": \"object\"\n    }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "Bad Request 400",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"balance\": 1020\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/profiles/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"profiles",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "9"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"26-Dh3TSeNZq8XdHnmLF/ZABvzk7tk\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:39:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"\\\"balance\\\" is not allowed\"\n}"
+						},
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"lastName\": \"Pratap Singh\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/profiles/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"profiles",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "9"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-Xv8v3HByGGF92rUJZzkvfwnezJw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:39:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"statusCode\": 200,\n    \"data\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Profile",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/profiles/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"profiles",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						},
+						"description": "### Delete Profile\n\nThis endpoint is used to delete a specific profile identified by its unique ID.\n\n#### Request\n\n- Method: DELETE\n    \n- URL: `{{base_url}}/profiles/:id`\n    \n\n#### Response\n\nThe response for this request is a JSON object conforming to the following schema:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"message\": {\n      \"type\": \"string\"\n    }\n  }\n}\n\n ```\n\nThe response contains a `message` property indicating the status of the deletion operation."
+					},
+					"response": [
+						{
+							"name": "Success 204",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/profiles/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"profiles",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-ydqtJebMoHmSJIh+CvTwu6obrw8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:40:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Not Found 404",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/profiles/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"profiles",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "212313"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4b-7+wAacxiSUAmg4eBRUZ3ixXnY1I\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:46:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"statusCode\": 404,\n    \"message\": \"\",\n    \"error\": \"Profile not found\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Get Best Profession",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/admin/best-profession?start=2020-08-10&end=2020-08-17",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"best-profession"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": "2020-08-10"
+								},
+								{
+									"key": "end",
+									"value": "2020-08-17"
+								}
+							]
+						},
+						"description": "### GET /admin/best-profession\n\nThis endpoint retrieves the best profession based on earnings within a specified time range.\n\n#### Request\n\n- Method: GET\n    \n- Base URL: {{base_url}}\n    \n- Path: /admin/best-profession\n    \n- Query Parameters:\n    \n    - start (required, date): The start date of the time range.\n        \n    - end (required, date): The end date of the time range.\n        \n\n#### Response\n\nThe response for this request follows the JSON schema below:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"success\": {\n      \"type\": \"boolean\"\n    },\n    \"message\": {\n      \"type\": \"string\"\n    },\n    \"statusCode\": {\n      \"type\": \"integer\"\n    },\n    \"data\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"total_earned\": {\n          \"type\": \"number\"\n        },\n        \"profession\": {\n          \"type\": \"string\"\n        }\n      }\n    }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/best-profession?start=2020-08-10&end=2020-08-17",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"best-profession"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "2020-08-10"
+										},
+										{
+											"key": "end",
+											"value": "2020-08-17"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "101"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"65-RKQyTH3pLe5UDwRa8G4iICbgPg4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:47:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"total_earned\": 2683,\n        \"profession\": \"Programmer\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Best Clients",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/admin/best-clients?start=2020-08-10&end=2020-08-17&limit=3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"best-clients"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": "2020-08-10"
+								},
+								{
+									"key": "end",
+									"value": "2020-08-17"
+								},
+								{
+									"key": "limit",
+									"value": "3"
+								}
+							]
+						},
+						"description": "### Get Best Clients\n\nThis endpoint retrieves the best clients within a specified date range.\n\n#### Request\n\n- Method: GET\n    \n- URL: `{{base_url}}/admin/best-clients`\n    \n- Query Parameters:\n    \n    - `start` (string, required): The start date for the date range.\n        \n    - `end` (string, required): The end date for the date range.\n        \n    - `limit` (number, required): The maximum number of best clients to retrieve.\n        \n\n#### Response\n\nThe response for this request is a JSON object with the following schema:\n\n``` json\n{\n  \"success\": boolean,\n  \"message\": string,\n  \"statusCode\": number,\n  \"data\": [\n    {\n      \"paid\": number,\n      \"id\": number,\n      \"fullName\": string\n    }\n  ]\n}\n\n ```\n\n- `success` (boolean): Indicates if the request was successful.\n    \n- `message` (string): Provides additional information about the request.\n    \n- `statusCode` (number): The status code of the response.\n    \n- `data` (array): An array of best clients, each containing:\n    \n    - `paid` (number): The amount paid by the client.\n        \n    - `id` (number): The unique identifier of the client.\n        \n    - `fullName` (string): The full name of the client."
+					},
+					"response": [
+						{
+							"name": "Success 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "profile_id",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/best-clients?start=2020-08-10&end=2020-08-17&limit=3",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"best-clients"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "2020-08-10"
+										},
+										{
+											"key": "end",
+											"value": "2020-08-17"
+										},
+										{
+											"key": "limit",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "185"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b9-mkZSqXT275tin8sDvNNN938YeSY\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Sep 2024 10:48:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"\",\n    \"statusCode\": 200,\n    \"data\": [\n        {\n            \"paid\": 2020,\n            \"id\": 4,\n            \"fullName\": \"Ash Kethcum\"\n        },\n        {\n            \"paid\": 442,\n            \"id\": null,\n            \"fullName\": \" \"\n        },\n        {\n            \"paid\": 242,\n            \"id\": 1,\n            \"fullName\": \"Harry Potter\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3001"
+		}
+	]
+}

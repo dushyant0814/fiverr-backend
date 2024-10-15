@@ -1,0 +1,956 @@
+2024-09-17 13:25:38 error: TypeError: Cannot read properties of undefined (reading 'service')
+    at getContracts (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/contract.js:23:42)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:47:12)
+2024-09-17 13:25:50 error: TypeError: Cannot read properties of undefined (reading 'service')
+    at getContracts (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/contract.js:23:42)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:47:12)
+2024-09-17 13:27:49 error: TypeError: Cannot read properties of undefined (reading 'service')
+    at getContract (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/contract.js:12:41)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/requestValidation.js:17:9
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:354:14)
+2024-09-17 13:30:27 error: TypeError: Cannot read properties of undefined (reading 'service')
+    at getContract (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/contract.js:12:41)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/requestValidation.js:17:9
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:354:14)
+2024-09-17 13:32:38 error: TypeError: this.service.getContractById is not a function
+    at ContractController.getContract (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/contract.js:14:49)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/requestValidation.js:17:9
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:354:14)
+2024-09-17 13:42:51 error: TypeError: Cannot read properties of undefined (reading 'service')
+    at create (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:20:35)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/requestValidation.js:7:9
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:335:12)
+2024-09-17 13:45:32 error: Error
+    at Database.<anonymous> (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:315:28
+    at async SQLiteQueryInterface.insert (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async Contract.save (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2490:35)
+    at async Contract.create (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1362:12)
+    at async ContractService.create (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:11:20)
+    at async ContractController.create (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:26:24)
+2024-09-17 13:56:12 error: Error
+    at Database.<anonymous> (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:315:28
+    at async SQLiteQueryInterface.insert (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async Contract.save (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2490:35)
+    at async Contract.create (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1362:12)
+    at async ContractService.create (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:11:20)
+    at async ContractController.create (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:26:24)
+2024-09-17 13:56:12 error: Error
+    at Database.<anonymous> (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:315:28
+    at async SQLiteQueryInterface.insert (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async Contract.save (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2490:35)
+    at async Contract.create (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1362:12)
+    at async ContractService.create (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:11:20)
+    at async ContractController.create (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:26:24)
+2024-09-17 13:57:07 error: Error
+    at Database.<anonymous> (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:315:28
+    at async SQLiteQueryInterface.insert (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async Contract.save (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2490:35)
+    at async Contract.create (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1362:12)
+    at async ContractService.create (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:11:20)
+    at async ContractController.create (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:26:24)
+2024-09-17 13:57:07 error: Error
+    at Database.<anonymous> (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:315:28
+    at async SQLiteQueryInterface.insert (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async Contract.save (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2490:35)
+    at async Contract.create (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1362:12)
+    at async ContractService.create (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:11:20)
+    at async ContractController.create (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:26:24)
+2024-09-17 13:59:47 error: Error
+    at Database.<anonymous> (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:315:28
+    at async SQLiteQueryInterface.insert (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async Contract.save (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2490:35)
+    at async Contract.create (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1362:12)
+    at async ContractService.create (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:11:20)
+    at async ContractController.create (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:26:24)
+2024-09-17 13:59:47 error: Error
+    at Database.<anonymous> (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:315:28
+    at async SQLiteQueryInterface.insert (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async Contract.save (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2490:35)
+    at async Contract.create (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1362:12)
+    at async ContractService.create (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:11:20)
+    at async ContractController.create (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:26:24)
+2024-09-17 14:18:26 error: AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Contract._optionsMustContainWhere (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2130:5)
+    at Contract.update (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1896:10)
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:63)
+    at ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:43)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/dbValidation.js:18:13
+2024-09-17 14:18:26 error: AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Contract._optionsMustContainWhere (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2130:5)
+    at Contract.update (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1896:10)
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:63)
+    at ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:43)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/dbValidation.js:18:13
+2024-09-17 14:18:40 error: AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Contract._optionsMustContainWhere (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2130:5)
+    at Contract.update (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1896:10)
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:63)
+    at ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:43)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/dbValidation.js:18:13
+2024-09-17 14:18:40 error: AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Contract._optionsMustContainWhere (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2130:5)
+    at Contract.update (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1896:10)
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:63)
+    at ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:43)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/dbValidation.js:18:13
+2024-09-17 14:23:30 error: AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Contract._optionsMustContainWhere (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2130:5)
+    at Contract.update (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1896:10)
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:63)
+    at ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:43)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/dbValidation.js:18:13
+2024-09-17 14:23:30 error: AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Contract._optionsMustContainWhere (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2130:5)
+    at Contract.update (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1896:10)
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:63)
+    at ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:43)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/dbValidation.js:18:13
+2024-09-17 14:24:05 error: AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Contract._optionsMustContainWhere (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2130:5)
+    at Contract.update (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1896:10)
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:63)
+    at ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:43)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/dbValidation.js:18:13
+2024-09-17 14:24:05 error: AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Contract._optionsMustContainWhere (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2130:5)
+    at Contract.update (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1896:10)
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:63)
+    at ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:43)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/dbValidation.js:18:13
+2024-09-17 14:25:04 error: AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Contract._optionsMustContainWhere (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2130:5)
+    at Contract.update (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1896:10)
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:63)
+    at ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:43)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/dbValidation.js:18:13
+2024-09-17 14:25:04 error: AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Contract._optionsMustContainWhere (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2130:5)
+    at Contract.update (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1896:10)
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:63)
+    at ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:43)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/dbValidation.js:18:13
+2024-09-17 14:26:12 error: TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:22)
+    at async ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:24)
+2024-09-17 14:26:12 error: TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:22)
+    at async ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:24)
+2024-09-17 14:26:56 error: TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:22)
+    at async ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:24)
+2024-09-17 14:26:56 error: TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:22)
+    at async ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:24)
+2024-09-17 14:29:56 error: TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:22)
+    at async ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:24)
+2024-09-17 14:29:56 error: TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:22)
+    at async ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:24)
+2024-09-17 14:43:31 error: TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:22)
+    at async ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:24)
+2024-09-17 14:43:31 error: TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:22)
+    at async ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:24)
+2024-09-17 14:45:44 error: TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:22)
+    at async ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:24)
+2024-09-17 14:45:44 error: TypeError: number 1 is not iterable (cannot read property Symbol(Symbol.iterator))
+    at ContractService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:22)
+    at async ContractController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:24)
+2024-09-17 14:57:08 error: TypeError: Cannot read properties of undefined (reading 'service')
+    at getUnpaidJobs (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:13:37)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/index.js:47:12)
+2024-09-17 14:59:22 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:00:32 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:01:00 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:01:08 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:01:09 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:01:09 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:01:22 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:01:25 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:01:26 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:01:26 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:01:37 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:01:38 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:01:55 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:05:11 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:05:15 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:05:16 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:05:16 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:05:17 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:05:18 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:05:56 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:07:01 error: Error: Job not found or already paid
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:07:45 error: Error: [object Object]
+    at JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:39:25)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:26:25)
+2024-09-17 15:10:07 error: ReferenceError: Transaction is not defined
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:38:23
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:24
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:11:32 error: ReferenceError: Transaction is not defined
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:38:23
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:24
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:12:06 error: ReferenceError: Transaction is not defined
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:38:23
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:24
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:13:27 error: ReferenceError: Transaction is not defined
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:38:23
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:24
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:13:53 error: ReferenceError: Transaction is not defined
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:38:23
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:24
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:14:10 error: ReferenceError: Transaction is not defined
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:38:23
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:24
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:14:35 error: ReferenceError: Transaction is not defined
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:38:23
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:24
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:14:57 error: ReferenceError: Transaction is not defined
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:38:23
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:24
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:15:56 error: Error: Job not found or already paid
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:42:29
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:16:20 error: Error: Job not found or already paid
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:42:29
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:16:35 error: Error: Job not found or already paid
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:42:29
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:17:37 error: Error: Job not found or already paid
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:42:29
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:17:59 error: ReferenceError: Profile is not defined
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:44:28
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:18:17 error: ReferenceError: Profile is not defined
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:44:28
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:18:57 error: ReferenceError: Profile is not defined
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:44:28
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:20:37 error: ReferenceError: Profile is not defined
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:44:28
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:21:28 error: Error: Job not found or already paid
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:42:29
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:21:42 error: Error: Job not found or already paid
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:42:29
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:27:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:27:25)
+2024-09-17 15:26:16 error: Error: Job not found or already paid
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:43:29
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:28:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:28:25)
+2024-09-17 15:45:04 error: TypeError: Cannot read properties of undefined (reading 'service')
+    at depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:15:40)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/dbValidation.js:18:13
+2024-09-17 15:45:12 error: TypeError: Cannot read properties of undefined (reading 'service')
+    at depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:15:40)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/dbValidation.js:18:13
+2024-09-17 15:50:30 error: TypeError: Cannot read properties of undefined (reading 'service')
+    at depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:15:40)
+    at Layer.handle [as handle_request] (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/express/lib/router/route.js:137:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/middleware/dbValidation.js:18:13
+2024-09-17 15:56:05 error: Error: Insufficient balance
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:51:23
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async JobService.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/services/job.js:28:24)
+    at async JobController.payForJob (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/job.js:28:25)
+2024-09-17 16:06:49 error: Error
+    at Database.<anonymous> (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:315:28
+    at async SQLiteQueryInterface.bulkUpdate (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-interface.js:366:12)
+    at async Profile.update (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2010:28)
+    at async ProfileService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:51)
+    at async ProfileController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:24)
+2024-09-17 16:06:49 error: Error
+    at Database.<anonymous> (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:315:28
+    at async SQLiteQueryInterface.bulkUpdate (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-interface.js:366:12)
+    at async Profile.update (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:2010:28)
+    at async ProfileService.update (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:29:51)
+    at async ProfileController.update (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/baseController.js:76:24)
+2024-09-17 16:52:01 error: Error: WHERE parameter "id" has invalid "undefined" value
+    at SQLiteQueryGenerator.whereItemQuery (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/dialects/abstract/query-generator.js:2445:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/dialects/abstract/query-generator.js:2434:25
+    at Array.forEach (<anonymous>)
+    at SQLiteQueryGenerator.whereItemsQuery (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/dialects/abstract/query-generator.js:2432:35)
+    at SQLiteQueryGenerator.getWhereConditions (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/dialects/abstract/query-generator.js:2860:19)
+    at SQLiteQueryGenerator.selectQuery (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/dialects/abstract/query-generator.js:1460:28)
+    at SQLiteQueryInterface.select (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/dialects/abstract/query-interface.js:1002:27)
+    at Function.findAll (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/model.js:1824:47)
+    at Function.findOne (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/model.js:1998:12)
+    at ProfileService.get (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:114:20)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:14:28
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/sequelize.js:1197:18
+    at ProfileService.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:13:24)
+    at ProfileController.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:16:29)
+2024-09-17 16:52:01 error: Error: WHERE parameter "id" has invalid "undefined" value
+    at SQLiteQueryGenerator.whereItemQuery (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/dialects/abstract/query-generator.js:2445:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/dialects/abstract/query-generator.js:2434:25
+    at Array.forEach (<anonymous>)
+    at SQLiteQueryGenerator.whereItemsQuery (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/dialects/abstract/query-generator.js:2432:35)
+    at SQLiteQueryGenerator.getWhereConditions (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/dialects/abstract/query-generator.js:2860:19)
+    at SQLiteQueryGenerator.selectQuery (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/dialects/abstract/query-generator.js:1460:28)
+    at SQLiteQueryInterface.select (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/dialects/abstract/query-interface.js:1002:27)
+    at Function.findAll (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/model.js:1824:47)
+    at Function.findOne (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/model.js:1998:12)
+    at ProfileService.get (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:114:20)
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:14:28
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/src/sequelize.js:1197:18
+    at ProfileService.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:13:24)
+    at ProfileController.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:16:29)
+2024-09-17 16:52:51 error: Error: WHERE parameter "id" has invalid "undefined" value
+    at SQLiteQueryGenerator.whereItemQuery (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at SQLiteQueryGenerator.whereItemsQuery (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at SQLiteQueryGenerator.getWhereConditions (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+    at SQLiteQueryGenerator.selectQuery (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+    at SQLiteQueryInterface.select (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at Profile.findAll (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1140:47)
+    at async Profile.findOne (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1240:12)
+    at async ProfileService.get (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:114:20)
+2024-09-17 16:52:51 error: Error: WHERE parameter "id" has invalid "undefined" value
+    at SQLiteQueryGenerator.whereItemQuery (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at SQLiteQueryGenerator.whereItemsQuery (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at SQLiteQueryGenerator.getWhereConditions (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+    at SQLiteQueryGenerator.selectQuery (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+    at SQLiteQueryInterface.select (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at Profile.findAll (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1140:47)
+    at async Profile.findOne (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/model.js:1240:12)
+    at async ProfileService.get (/Users/dushyant/Downloads/hometask-be-template-master/src/services/baseService.js:114:20)
+2024-09-17 16:53:34 error: Error: Client not found
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:23:23
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async ProfileService.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:13:24)
+    at async ProfileController.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:16:29)
+2024-09-17 16:53:45 error: Error: Deposit amount exceeds 25% of total jobs to pay
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:39:23
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async ProfileService.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:13:24)
+    at async ProfileController.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:16:29)
+2024-09-17 16:53:50 error: Error: Deposit amount exceeds 25% of total jobs to pay
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:39:23
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async ProfileService.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:13:24)
+    at async ProfileController.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:16:29)
+2024-09-17 16:53:52 error: Error: Deposit amount exceeds 25% of total jobs to pay
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:39:23
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async ProfileService.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:13:24)
+    at async ProfileController.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:16:29)
+2024-09-17 16:53:54 error: Error: Deposit amount exceeds 25% of total jobs to pay
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:39:23
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async ProfileService.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:13:24)
+    at async ProfileController.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:16:29)
+2024-09-17 16:53:55 error: Error: Deposit amount exceeds 25% of total jobs to pay
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:39:23
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async ProfileService.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:13:24)
+    at async ProfileController.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:16:29)
+2024-09-17 16:55:09 error: Error: Deposit amount exceeds 25% of total jobs to pay
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:39:23
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async ProfileService.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:13:24)
+    at async ProfileController.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:16:29)
+2024-09-17 16:55:22 error: Error: Deposit amount exceeds 25% of total jobs to pay
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:39:23
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async ProfileService.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:13:24)
+    at async ProfileController.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:16:29)
+2024-09-17 16:55:47 error: Error: Deposit amount exceeds 25% of total jobs to pay
+    at /Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:39:23
+    at async /Users/dushyant/Downloads/hometask-be-template-master/node_modules/sequelize/lib/sequelize.js:507:18
+    at async ProfileService.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/services/profile.js:13:24)
+    at async ProfileController.depositMoney (/Users/dushyant/Downloads/hometask-be-template-master/src/controllers/profile.js:16:29)
+2024-09-17 17:08:30 error: Test error
+2024-09-17 17:16:58 error: Error: Deposit failed
+    at Object.<anonymous> (/Users/dushyant/Downloads/hometask-be-template-master/src/tests/controller.test.js:44:62)
+    at Promise.then.completed (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/dushyant/Downloads/hometask-be-template-master/node_modules/jest-runner/build/runTest.js:444:34)
+2024-09-26 11:37:20 error: Error: Deposit amount exceeds 25% of total jobs to pay
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:39:23
+    at async /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/lib/sequelize.js:507:18
+    at async ProfileService.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:13:24)
+    at async ProfileController.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/profile.js:16:29)
+2024-09-26 11:39:14 error: Error: test
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:41:19
+    at async /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/lib/sequelize.js:507:18
+    at async ProfileService.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:13:24)
+    at async ProfileController.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/profile.js:16:29)
+2024-10-01 11:13:52 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.aggregate (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:2030:12)
+    at Function.sum (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:2236:23)
+    at sum (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:26:46)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:18
+    at ProfileService.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:13:24)
+    at ProfileController.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/profile.js:16:29)
+2024-10-01 11:13:52 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at JobService.list (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:98:20)
+    at JobController.getUnpaidJobs (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:16:26)
+2024-10-01 11:13:52 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at JobService.list (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:98:20)
+    at JobController.getUnpaidJobs (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:16:26)
+2024-10-01 11:13:52 error: Error: Association with alias "Contractor" does not exist on Contract
+    at Function._transformStringAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:371:22)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:405:16)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:818:10)
+    at Function._defaultsOptions (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:861:17)
+    at Function._injectScope (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:3413:10)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1777:10)
+    at Function.findOne (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1998:23)
+    at JobService.findOne [as get] (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:114:42)
+    at get (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:29:36)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:24
+    at JobService.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:28:24)
+    at JobController.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:28:25)
+2024-10-01 11:13:52 error: Error: Association with alias "Contractor" does not exist on Contract
+    at Function._transformStringAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:371:22)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:405:16)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:818:10)
+    at Function._defaultsOptions (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:861:17)
+    at Function._injectScope (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:3413:10)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1777:10)
+    at Function.findOne (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1998:23)
+    at JobService.findOne [as get] (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:114:42)
+    at get (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:29:36)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:24
+    at JobService.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:28:24)
+    at JobController.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:28:25)
+2024-10-01 11:13:53 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at AdminService.getBestProfession (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/admin.js:7:24)
+    at getBestProfession (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/admin.js:9:36)
+2024-10-01 11:13:53 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at getBestClients (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/admin.js:20:33)
+2024-10-01 11:14:46 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.aggregate (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:2030:12)
+    at Function.sum (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:2236:23)
+    at sum (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:26:46)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:18
+    at ProfileService.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:13:24)
+    at ProfileController.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/profile.js:16:29)
+2024-10-01 11:14:46 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at JobService.list (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:98:20)
+    at JobController.getUnpaidJobs (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:16:26)
+2024-10-01 11:14:46 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at JobService.list (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:98:20)
+    at JobController.getUnpaidJobs (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:16:26)
+2024-10-01 11:14:46 error: Error: Association with alias "Contractor" does not exist on Contract
+    at Function._transformStringAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:371:22)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:405:16)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:818:10)
+    at Function._defaultsOptions (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:861:17)
+    at Function._injectScope (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:3413:10)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1777:10)
+    at Function.findOne (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1998:23)
+    at JobService.findOne [as get] (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:114:42)
+    at get (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:29:36)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:24
+    at JobService.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:28:24)
+    at JobController.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:28:25)
+2024-10-01 11:14:46 error: Error: Association with alias "Contractor" does not exist on Contract
+    at Function._transformStringAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:371:22)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:405:16)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:818:10)
+    at Function._defaultsOptions (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:861:17)
+    at Function._injectScope (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:3413:10)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1777:10)
+    at Function.findOne (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1998:23)
+    at JobService.findOne [as get] (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:114:42)
+    at get (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:29:36)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:24
+    at JobService.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:28:24)
+    at JobController.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:28:25)
+2024-10-01 11:14:46 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at AdminService.getBestProfession (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/admin.js:7:24)
+    at getBestProfession (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/admin.js:9:36)
+2024-10-01 11:14:46 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at getBestClients (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/admin.js:20:33)
+2024-10-01 11:15:18 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.aggregate (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:2030:12)
+    at Function.sum (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:2236:23)
+    at sum (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:26:46)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:18
+    at ProfileService.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:13:24)
+    at ProfileController.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/profile.js:16:29)
+2024-10-01 11:15:18 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at JobService.list (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:98:20)
+    at JobController.getUnpaidJobs (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:16:26)
+2024-10-01 11:15:18 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at JobService.list (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:98:20)
+    at JobController.getUnpaidJobs (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:16:26)
+2024-10-01 11:15:18 error: Error: Association with alias "Contractor" does not exist on Contract
+    at Function._transformStringAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:371:22)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:405:16)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:818:10)
+    at Function._defaultsOptions (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:861:17)
+    at Function._injectScope (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:3413:10)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1777:10)
+    at Function.findOne (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1998:23)
+    at JobService.findOne [as get] (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:114:42)
+    at get (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:29:36)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:24
+    at JobService.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:28:24)
+    at JobController.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:28:25)
+2024-10-01 11:15:18 error: Error: Association with alias "Contractor" does not exist on Contract
+    at Function._transformStringAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:371:22)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:405:16)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:818:10)
+    at Function._defaultsOptions (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:861:17)
+    at Function._injectScope (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:3413:10)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1777:10)
+    at Function.findOne (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1998:23)
+    at JobService.findOne [as get] (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:114:42)
+    at get (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:29:36)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:24
+    at JobService.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:28:24)
+    at JobController.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:28:25)
+2024-10-01 11:15:18 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at AdminService.getBestProfession (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/admin.js:7:24)
+    at getBestProfession (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/admin.js:9:36)
+2024-10-01 11:15:18 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at getBestClients (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/admin.js:20:33)
+2024-10-01 11:15:27 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.aggregate (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:2030:12)
+    at Function.sum (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:2236:23)
+    at sum (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:26:46)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:18
+    at ProfileService.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:13:24)
+    at ProfileController.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/profile.js:16:29)
+2024-10-01 11:15:27 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at JobService.list (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:98:20)
+    at JobController.getUnpaidJobs (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:16:26)
+2024-10-01 11:15:27 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at JobService.list (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:98:20)
+    at JobController.getUnpaidJobs (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:16:26)
+2024-10-01 11:15:27 error: Error: Association with alias "Contractor" does not exist on Contract
+    at Function._transformStringAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:371:22)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:405:16)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:818:10)
+    at Function._defaultsOptions (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:861:17)
+    at Function._injectScope (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:3413:10)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1777:10)
+    at Function.findOne (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1998:23)
+    at JobService.findOne [as get] (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:114:42)
+    at get (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:29:36)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:24
+    at JobService.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:28:24)
+    at JobController.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:28:25)
+2024-10-01 11:15:27 error: Error: Association with alias "Contractor" does not exist on Contract
+    at Function._transformStringAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:371:22)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:405:16)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:818:10)
+    at Function._defaultsOptions (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:861:17)
+    at Function._injectScope (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:3413:10)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1777:10)
+    at Function.findOne (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1998:23)
+    at JobService.findOne [as get] (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/baseService.js:114:42)
+    at get (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:29:36)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:24
+    at JobService.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:28:24)
+    at JobController.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:28:25)
+2024-10-01 11:15:27 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at AdminService.getBestProfession (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/admin.js:7:24)
+    at getBestProfession (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/admin.js:9:36)
+2024-10-01 11:15:27 error: SequelizeEagerLoadingError: Contract is not associated to Job!
+    at Function._getIncludedAssociation (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:742:13)
+    at Function._validateIncludedElement (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:646:53)
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:537:39)
+    at Function.findAll (/Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/model.js:1794:12)
+    at getBestClients (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/admin.js:20:33)
+2024-10-01 11:16:18 error: Error: Deposit amount exceeds 25% of total jobs to pay
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:40:23
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:18
+    at ProfileService.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:13:24)
+    at ProfileController.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/profile.js:16:29)
+2024-10-01 11:16:18 error: Error: Job not found or already paid
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:43:29
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:18
+    at JobService.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:28:24)
+    at JobController.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:28:25)
+2024-10-01 11:16:46 error: Error: Deposit amount exceeds 25% of total jobs to pay
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:40:23
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:18
+    at ProfileService.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/profile.js:13:24)
+    at ProfileController.depositMoney (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/profile.js:16:29)
+2024-10-01 11:16:46 error: Error: Job not found or already paid
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:43:29
+    at /Users/dushyant/Downloads/dushyant-deel-backend-task/node_modules/sequelize/src/sequelize.js:1197:18
+    at JobService.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/services/job.js:28:24)
+    at JobController.payForJob (/Users/dushyant/Downloads/dushyant-deel-backend-task/src/controllers/job.js:28:25)
